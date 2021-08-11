@@ -1,14 +1,14 @@
-```
-var axios = require("axios")
+```javascript
+var axios = require('axios')
 
-const CK = "ck_xxx"
-const CS = "cs_xxx"
+const CK = 'ck_xxx'
+const CS = 'cs_xxx'
 
 const key = `${CK}:${CS}`
 
 axios({
-  method: "get",
-  url: "https://domain.com/wp-json/wc/v3/products",
+  method: 'get',
+  url: 'https://domain.com/wp-json/wc/v3/products',
   headers: {
     // Authorization: `Basic ${Base64.encode(`${CK}:${CS}`)}`,
     // Authorization: `Basic ${Base64.encode(key)}`,
@@ -23,8 +23,6 @@ axios({
   })
 
 const getProducts = async () => {
-  const response = await axios.get(
-    "https://kharidpack.com/wp-json/wc/v3/products"
-  )
+  const response = await axios.get('https://kharidpack.com/wp-json/wc/v3/products')
 }
 ```
