@@ -1,3 +1,4 @@
+```
 var axios = require("axios")
 
 const CK = "ck_xxx"
@@ -26,3 +27,4 @@ const getProducts = async () => {
     "https://kharidpack.com/wp-json/wc/v3/products"
   )
 }
+```
