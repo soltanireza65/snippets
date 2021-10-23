@@ -4,6 +4,7 @@ var axios = require('axios')
 const CK = 'ck_xxx'
 const CS = 'cs_xxx'
 
+
 axios({
   method: 'get',
   url: 'https://domain.com/wp-json/wc/v3/products',
