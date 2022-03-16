@@ -1,0 +1,95 @@
+{
+    "TS React": {
+      "prefix": "fc",
+      "body": [
+        "import React, { FC } from 'react'",
+        "",
+        "type IProps = {}",
+        "",
+        "const ${1:${TM_FILENAME_BASE}}: FC<IProps> = ({}) => {",
+        "  return (",
+        "    <div>${1:first}</div>",
+        "  )",
+        "}",
+        "",
+        "export default ${1:${TM_FILENAME_BASE}}"
+      ],
+      "description": "Creates a React Arrow Function Component",
+      "scope": "typescriptreact"
+    },
+    "React": {
+      "prefix": "fc",
+      "body": [
+        "import React, { FC } from 'react'",
+        "",
+        "const ${1:${TM_FILENAME_BASE}} = ({}) => {",
+        "  return (",
+        "    <div>${1:first}</div>",
+        "  )",
+        "}",
+        "",
+        "export default ${1:${TM_FILENAME_BASE}}"
+      ],
+      "description": "Creates a React Arrow Function Component",
+      "scope": "javascriptreact"
+    },
+    "exportType": {
+      "body": ["export type ${1:first} = {${2:second}}"],
+      // "key": "exportType",
+      "prefix": "exptp",
+      "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "exportInterface": {
+      // "key": "exportInterface",
+      "prefix": "expint",
+      "body": ["export interface ${1:first} {${2:second}}"],
+      "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "typescriptReactNativeArrowFunctionComponent": {
+      // "key": "typescriptReactNativeArrowFunctionComponent",
+      "prefix": "tsrnf",
+      "body": [
+        "import { View, Text } from 'react-native'",
+        "import React from 'react'",
+        "",
+        "type Props = {}",
+        "",
+        "const ${1:${TM_FILENAME_BASE}} = (props: Props) => {",
+        "  return (",
+        "    <View>",
+        "      <Text>${1:first}</Text>",
+        "    </View>",
+        "  )",
+        "}",
+        "",
+        "export default ${1:${TM_FILENAME_BASE}}"
+      ],
+      "description": "Creates a React Native Arrow Function Component with ES7 module system in TypeScript",
+      "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+    "typescriptReactNativeArrowFunctionComponentWithStyles": {
+      // "key": "typescriptReactNativeArrowFunctionComponentWithStyles",
+      "prefix": "tsrnfs",
+      "body": [
+        "import { StyleSheet, Text, View } from 'react-native'",
+        "import React from 'react'",
+        "",
+        "type Props = {}",
+        "",
+        "const ${1:${TM_FILENAME_BASE}} = (props: Props) => {",
+        "  return (",
+        "    <View>",
+        "      <Text>${1:first}</Text>",
+        "    </View>",
+        "  )",
+        "}",
+        "",
+        "export default ${1:${TM_FILENAME_BASE}}",
+        "",
+        "const styles = StyleSheet.create({})"
+      ],
+      "description": "Creates a React Native Arrow Function Component with ES7 module system, TypeScript interface and StyleSheet",
+      "scope": "typescript,typescriptreact,javascript,javascriptreact"
+    },
+  }
+  
